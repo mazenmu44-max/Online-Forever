@@ -3,9 +3,9 @@ import json
 import requests
 import websockets
 
-TOKEN = "Add your token here"
+TOKEN = "MTUyNzAxNjc4OTE5ODc2NjExMA.Gzjfjy.l5RNLk9Op_4SXkidx8CgF6nakiFnbuTN11l6tc"
 STATUS = "online"  # online / dnd / idle
-CUSTOM_STATUS = "Hey!"  # Leave empty if you don't want a custom status
+CUSTOM_STATUS = "son😭💔"  # Leave empty if you don't want a custom status
 USE_EMOJI = False
 
 headers = {"Authorization": TOKEN}
@@ -19,7 +19,7 @@ user = r.json()
 print(f"Logged in as {user['username']} ({user['id']})!")
 
 activity = {
-    "name": "Custom Status",
+    "name": "SIDE",
     "type": 4,
     "state": CUSTOM_STATUS,
     "id": "custom"
@@ -27,7 +27,7 @@ activity = {
 
 if USE_EMOJI:
     activity["emoji"] = {
-        "name": "🔥",   # Unicode emoji or emoji name
+        "name": "⚫️",   # Unicode emoji or emoji name
         "id": None,     # Required only for custom emojis
         "animated": False
     }
